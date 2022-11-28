@@ -14,5 +14,23 @@
     display: grid;
     grid-template-columns: auto auto;
     
-
 }
+/* (A) 3 COLUMNS PER ROW */
+#bigbox {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    
+  }
+  /* (B) 1 COL ON SMALL SCREENS */
+  @media screen and (max-width:768px) {
+    #grid { grid-template-columns: auto; }
+  }
+  /* (C) OPTIONAL FOR THE CELLS */
+  .head, .cell { padding: 10px; }
+  .head {
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  .cell {
+    border: 1px solid black;
+  }
