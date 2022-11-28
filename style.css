@@ -3,34 +3,14 @@
 
 }
 .mainheader{
-    text-align: center;
     color: red;
+    display: flex;
+    justify-content: center;
 }
-#bigbox{
-    border: 1px solid black;
-    width: 350px;
-    height: 350px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto auto;
+.functionalities{
+    display: flex;
+    justify-content: center;
+}
+#colorselect{
     
 }
-/* (A) 3 COLUMNS PER ROW */
-#bigbox {
-    display: grid;
-    grid-template-columns: auto auto auto; 
-    
-  }
-  /* (B) 1 COL ON SMALL SCREENS */
-  @media screen and (max-width:768px) {
-    #grid { grid-template-columns: auto; }
-  }
-  /* (C) OPTIONAL FOR THE CELLS */
-  .head, .cell { padding: 10px; }
-  .head {
-    font-weight: bold;
-    border: 1px solid black;
-  }
-  .cell {
-    border: 1px solid black;
-  }
