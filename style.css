@@ -1,16 +1,19 @@
 *{
     font-family: lacquer, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    
 }
 .mainheader{
     color: red;
     display: flex;
     justify-content: center;
+    font-size: 48px;
 }
-.functionalities{
+.paintcontainer{
     display: flex;
     justify-content: center;
 }
 #colorselect{
-    
+    width: 100px;
+    height: 100px;
 }
+
