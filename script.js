@@ -69,7 +69,16 @@ gridAdjusterButtonDiv.innerHTML = '1x1';
 let gridAdjuster = document.createElement('input');
 gridAdjusterButtonDiv.appendChild(gridAdjuster);
 gridAdjuster.setAttribute('type', 'range');
+gridAdjuster.setAttribute('value', 0);
+let gridAdjusterValue = 0
 
+gridAdjuster.addEventListener('input', function () {
+    gridAdjusterValue += 1;
+    if (gridAdjusterValue) {
+        
+    }
+    console.log(gridAdjusterValue)
+})
 
 
 
