@@ -27,6 +27,10 @@ colorButtonDiv.style.cssText = 'display: flex; justify-content: center;';
 colorButtonDiv.appendChild(colorInput);
 colorInput.setAttribute('type', 'color');
 colorInput.style.cssText = 'box-shadow: 6px 4px 2px; border-radius: 10px; width: 100px; height: 100px;';
+colorInput.addEventListener('click', function () {
+    console.log(colorInput.value)
+})
+
 
 let eraserIndicator = document.createElement('h3');
 body.append(eraserIndicator);
@@ -69,4 +73,13 @@ function makeRows(rows, cols) {
 };
 
 makeRows(16,16);
- 
+
+let gridItem = document.querySelectorAll('.grid-item');
+console.log(gridItem);
+gridItem.forEach(item => {
+    item.addEventListener('click', function () {
+        item.style.backgroundColor = colorInput.value;
+})
+});
+
+
