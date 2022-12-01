@@ -83,3 +83,7 @@ gridItem.forEach(item => {
 });
 
 let promptPopupButton = document.getElementById('promptPopupButton');
+promptPopupButton.addEventListener('click', function () {
+    console.log(prompt('Enter The Number Of Boxes You Need to Sketch Your Path'));
+
+})
