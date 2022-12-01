@@ -40,3 +40,6 @@
     border: 1px solid black;
     text-align: center;
   }
+  .grid-item:hover{
+    background-color: black;
+  }
