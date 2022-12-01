@@ -16,4 +16,27 @@
     width: 100px;
     height: 100px;
 }
-
+#gridDimensionsAdjuster{
+    width: 10%;
+    height: 50px;
+    font-size: 36px;
+}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+  }
