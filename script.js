@@ -323,6 +323,127 @@ let promptPopupButtonEvent = promptPopupButton.addEventListener('click', functio
       container.innerHTML = '';
       makeRows(30,30);
     };
+    if (gridNumberPrompt === '31') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(31,31);
+    };
+    if (gridNumberPrompt === '32') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(32,32);
+    };
+    if (gridNumberPrompt === '33') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(33,33);
+    };
+    if (gridNumberPrompt === '34') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(34,34);
+    };
+    if (gridNumberPrompt === '35') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(35,35);
+    };
+    if (gridNumberPrompt === '36') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(36,36);
+    };
+    if (gridNumberPrompt === '37') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(37,37);
+    };
+    if (gridNumberPrompt === '38') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(38,38);
+    };
+    if (gridNumberPrompt === '39') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(39,39);
+    };
+    if (gridNumberPrompt === '40') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(40,40);
+    };
+    if (gridNumberPrompt === '41') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(41,41);
+    };
+    if (gridNumberPrompt === '42') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(42,42);
+    };
+    if (gridNumberPrompt === '43') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(43,43);
+    };
+    if (gridNumberPrompt === '44') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(44,44);
+    };
+    if (gridNumberPrompt === '45') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(45,45);
+    };
+    if (gridNumberPrompt === '46') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(46,46);
+    };
+    if (gridNumberPrompt === '47') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(47,47);
+    };
+    if (gridNumberPrompt === '48') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(48,48);
+    };
+    if (gridNumberPrompt === '49') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(49,49);
+    };
+    if (gridNumberPrompt === '50') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(50,50);
+    };
+
 
     let gridItem = document.querySelectorAll('.grid-item');
 console.log(gridItem);
