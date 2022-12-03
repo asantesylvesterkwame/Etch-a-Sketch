@@ -335,10 +335,16 @@ gridItem.forEach(item => {
 gridItem.forEach(item => {
     item.addEventListener('dragover', function () {
         item.style.backgroundColor = colorInput.value;
-})
+});
 }); 
 
- 
+clearButton.addEventListener('click', function () {
+  gridItem.forEach(item => {
+    
+        item.style.backgroundColor = 'white';
+
+});
+});
 
 
 });
