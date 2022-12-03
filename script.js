@@ -34,7 +34,7 @@ colorInput.addEventListener('click', function () {
 
 let eraserIndicator = document.createElement('h3');
 body.append(eraserIndicator);
-eraserIndicator.innerHTML = 'THIS IS YOUR ERASER';
+eraserIndicator.innerHTML = 'THIS IS YOUR ERASER <br/> CLICK/TAP TO ACTIVATE <br/> DOUBLE CLICK/TAP TO DEACTIVATE';
 eraserIndicator.style.cssText = 'border-radius: 10px; text-align: center; font-size: 24px;';
 
 let eraserButtonContainer = document.createElement('div');
@@ -59,7 +59,29 @@ let clearButton = document.createElement('button');
 clearButtonContainer.appendChild(clearButton);
 clearButton.style.cssText = 'box-shadow: 6px 4px 2px; width: 150px; height: 50px; font-size: 24px; font-family: arial;'
 clearButton.innerHTML = 'CLEAR';
+clearButton.addEventListener('click', function () {
+  gridItem.forEach(item => {
+    
+        item.style.backgroundColor = 'white';
 
+});
+});
+
+eraserButton.addEventListener('click', function () {
+  gridItem.forEach(item => {
+    item.addEventListener('click', function () {
+        item.style.backgroundColor = 'white';
+})
+});
+
+gridItem.forEach(item => {
+    item.addEventListener('dragover', function () {
+        item.style.backgroundColor = 'white';
+})
+}); 
+
+});
+ 
 const container = document.getElementById("container");
 const parentContainer = container.parentNode
 
@@ -74,8 +96,8 @@ function makeRows(rows, cols) {
     
   };
 };
-let rowNum = 1
-let colNum = 1
+let rowNum = 16
+let colNum = 16
 makeRows(rowNum,colNum)
 
 
@@ -98,7 +120,7 @@ let promptPopupButtonEvent = promptPopupButton.addEventListener('click', functio
       colNum --;
       container.innerHTML = '';
       makeRows(2,2);  
-      CON
+      
 
     };
     if (gridNumberPrompt === '3') {
@@ -239,9 +261,67 @@ let promptPopupButtonEvent = promptPopupButton.addEventListener('click', functio
       rowNum --;
       colNum --;
       container.innerHTML = '';
-      makeRows(20,20)
-      
-
+      makeRows(20,20);
+    };
+    if (gridNumberPrompt === '21') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(21,21);
+    };
+    if (gridNumberPrompt === '22') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(22,22);
+    };
+    if (gridNumberPrompt === '23') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(23,23);
+    };
+    if (gridNumberPrompt === '24') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(24,24);
+    };
+    if (gridNumberPrompt === '25') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(25,25);
+    };
+    if (gridNumberPrompt === '26') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(26,26);
+    };
+    if (gridNumberPrompt === '27') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(27,27);
+    };
+    if (gridNumberPrompt === '28') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(28,28);
+    };
+    if (gridNumberPrompt === '29') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(29,29);
+    };
+    if (gridNumberPrompt === '30') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(30,30);
     };
 
     let gridItem = document.querySelectorAll('.grid-item');
@@ -277,5 +357,17 @@ gridItem.forEach(item => {
 })
 }); 
 
- 
+eraserButton.addEventListener('dblclick', function () {
+  gridItem.forEach(item => {
+    item.addEventListener('click', function () {
+        item.style.backgroundColor = colorInput.value;
+})
+});
 
+gridItem.forEach(item => {
+    item.addEventListener('dragover', function () {
+        item.style.backgroundColor = colorInput.value;
+})
+}); 
+
+})
