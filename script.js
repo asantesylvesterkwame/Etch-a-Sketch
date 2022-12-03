@@ -477,3 +477,8 @@ gridItem.forEach(item => {
 }); 
 
 })
+
+let credit = document.createElement('h4');
+body.append(credit);
+credit.innerHTML = 'Built By: Asante Sylvester Kwame';
+credit.style.textAlign = 'center';
