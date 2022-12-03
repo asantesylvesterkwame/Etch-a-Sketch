@@ -84,24 +84,13 @@ makeRows(rowNum,colNum)
 let promptPopupButton = document.getElementById('promptPopupButton');
 let promptPopupButtonEvent = promptPopupButton.addEventListener('click', function () {
     let gridNumberPrompt = prompt('Enter The Number Of Boxes You Need to Sketch Your Path');
+    
     if (gridNumberPrompt === '1') {
       rowNum--;
       colNum--;
-      let generatedBoxes = container.innerHTML = '';
+      container.innerHTML = '';
       makeRows(1,1)
-      gridItem.forEach(item => {
-        item.addEventListener('click', function () {
-            item.style.backgroundColor = colorInput.value;
-    })
-    });
-    
-    gridItem.forEach(item => {
-        item.addEventListener('dragover', function () {
-            item.style.backgroundColor = colorInput.value;
-    })
-    }); 
-    
-     
+      
 
     }
     if (gridNumberPrompt === '2') {
@@ -109,7 +98,7 @@ let promptPopupButtonEvent = promptPopupButton.addEventListener('click', functio
       colNum --;
       container.innerHTML = '';
       makeRows(2,2);  
-      
+      CON
 
     };
     if (gridNumberPrompt === '3') {
@@ -255,7 +244,23 @@ let promptPopupButtonEvent = promptPopupButton.addEventListener('click', functio
 
     };
 
-    
+    let gridItem = document.querySelectorAll('.grid-item');
+console.log(gridItem);
+gridItem.forEach(item => {
+    item.addEventListener('click', function () {
+        item.style.backgroundColor = colorInput.value;
+})
+});
+
+gridItem.forEach(item => {
+    item.addEventListener('dragover', function () {
+        item.style.backgroundColor = colorInput.value;
+})
+}); 
+
+ 
+
+
 });
 
 let gridItem = document.querySelectorAll('.grid-item');
