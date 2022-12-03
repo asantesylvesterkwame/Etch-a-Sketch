@@ -81,6 +81,7 @@ function makeRows(rows, cols) {
     cell.style.cssText = 'border: 1px solid black;';
     // cell.innerText = (c + 1);
     container.appendChild(cell).className = "grid-item";
+
     
   };
 };
@@ -93,7 +94,7 @@ makeRows(rowNum,colNum)
 
 let promptPopupButton = document.getElementById('promptPopupButton');
 let promptPopupButtonEvent = promptPopupButton.addEventListener('click', function () {
-    let gridNumberPrompt = prompt('Enter The Number Of Boxes You Need to Sketch Your Path');
+    let gridNumberPrompt = prompt('Enter The Number Of Boxes You Need to Sketch Your Path. Just Type in a number FROM 1 TO 50 ');
     
     if (gridNumberPrompt === '1') {
       rowNum--;
@@ -102,109 +103,98 @@ let promptPopupButtonEvent = promptPopupButton.addEventListener('click', functio
       makeRows(1,1)
       
 
-    }
-    if (gridNumberPrompt === '2') {
+    }else if (gridNumberPrompt === '2') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(2,2);  
       
 
-    };
-    if (gridNumberPrompt === '3') {
+    }
+    else if (gridNumberPrompt === '3') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(3,3);
       
 
-    };
-    if (gridNumberPrompt === '4') {
+    }else if (gridNumberPrompt === '4') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(4,4);
       
 
-    };
-    if (gridNumberPrompt === '5') {
+    }
+    else if (gridNumberPrompt === '5') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(5,5);
       
 
-    };
-    if (gridNumberPrompt === '6') {
+    }
+    else if (gridNumberPrompt === '6') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(6,6);
       
 
-    };
-    if (gridNumberPrompt === '7') {
+    }else if (gridNumberPrompt === '7') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(7,7);
       
 
-    };
-    if (gridNumberPrompt === '8') {
+    }else if (gridNumberPrompt === '8') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(8,8);
       
 
-    };
-    if (gridNumberPrompt === '9') {
+    }else if (gridNumberPrompt === '9') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(9,9);
-    };
-    if (gridNumberPrompt === '10') {
+    }else if (gridNumberPrompt === '10') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(10,10)
       
 
-    };
-    if (gridNumberPrompt === '11') {
+    }else if (gridNumberPrompt === '11') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(11,11)
       
-    };
-    if (gridNumberPrompt === '12') {
+    }else if (gridNumberPrompt === '12') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(12,12);
       
 
-    };
-    if (gridNumberPrompt === '13') {
+    }else if (gridNumberPrompt === '13') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(13,13);
       
 
-    };
-    if (gridNumberPrompt === '14') {
+    }else if(gridNumberPrompt === '14') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(14,14);
       
 
-    };
-    if (gridNumberPrompt === '15') {
+    }else if(gridNumberPrompt === '15') {
       
       rowNum --;
       colNum --;
@@ -212,178 +202,150 @@ let promptPopupButtonEvent = promptPopupButton.addEventListener('click', functio
       makeRows(15,15);
       
 
-    };
-    if (gridNumberPrompt === '16') {
+    }else if(gridNumberPrompt === '16') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(16,16);
       
 
-    };
-    if (gridNumberPrompt === '17') {
+    }else if(gridNumberPrompt === '17') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(17,17);
       
 
-    };
-    if (gridNumberPrompt === '18') {
+    }else if(gridNumberPrompt === '18') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(18,18);
       
 
-    };
-    if (gridNumberPrompt === '19') {
+    }else if(gridNumberPrompt === '19') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(19,19);
       
 
-    };
-    if (gridNumberPrompt === '20') {
+    }else if(gridNumberPrompt === '20') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(20,20);
-    };
-    if (gridNumberPrompt === '21') {
+    }else if(gridNumberPrompt === '21') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(21,21);
-    };
-    if (gridNumberPrompt === '22') {
+    }else if(gridNumberPrompt === '22') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(22,22);
-    };
-    if (gridNumberPrompt === '23') {
+    }else if(gridNumberPrompt === '23') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(23,23);
-    };
-    if (gridNumberPrompt === '24') {
+    }else if(gridNumberPrompt === '24') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(24,24);
-    };
-    if (gridNumberPrompt === '25') {
+    }else if(gridNumberPrompt === '25') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(25,25);
-    };
-    if (gridNumberPrompt === '26') {
+    }else if(gridNumberPrompt === '26') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(26,26);
-    };
-    if (gridNumberPrompt === '27') {
+    }else if(gridNumberPrompt === '27') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(27,27);
-    };
-    if (gridNumberPrompt === '28') {
+    }else if(gridNumberPrompt === '28') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(28,28);
-    };
-    if (gridNumberPrompt === '29') {
+    }else if (gridNumberPrompt === '29') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(29,29);
-    };
-    if (gridNumberPrompt === '30') {
+    }else if(gridNumberPrompt === '30') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(30,30);
-    };
-    if (gridNumberPrompt === '31') {
+    }else if(gridNumberPrompt === '31') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(31,31);
-    };
-    if (gridNumberPrompt === '32') {
+    }else if(gridNumberPrompt === '32') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(32,32);
-    };
-    if (gridNumberPrompt === '33') {
+    }else if(gridNumberPrompt === '33') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(33,33);
-    };
-    if (gridNumberPrompt === '34') {
+    }else if(gridNumberPrompt === '34') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(34,34);
-    };
-    if (gridNumberPrompt === '35') {
+    }else if(gridNumberPrompt === '35') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(35,35);
-    };
-    if (gridNumberPrompt === '36') {
+    }else if(gridNumberPrompt === '36') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(36,36);
-    };
-    if (gridNumberPrompt === '37') {
+    }else if(gridNumberPrompt === '37') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(37,37);
-    };
-    if (gridNumberPrompt === '38') {
+    }else if(gridNumberPrompt === '38') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(38,38);
-    };
-    if (gridNumberPrompt === '39') {
+    }else if(gridNumberPrompt === '39') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(39,39);
-    };
-    if (gridNumberPrompt === '40') {
+    }else if(gridNumberPrompt === '40') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(40,40);
-    };
-    if (gridNumberPrompt === '41') {
+    }else if(gridNumberPrompt === '41') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(41,41);
-    };
-    if (gridNumberPrompt === '42') {
+    }else if(gridNumberPrompt === '42') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(42,42);
-    };
-    if (gridNumberPrompt === '43') {
+    }else if(gridNumberPrompt === '43') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
@@ -406,30 +368,29 @@ let promptPopupButtonEvent = promptPopupButton.addEventListener('click', functio
       colNum --;
       container.innerHTML = '';
       makeRows(46,46);
-    };
-    if (gridNumberPrompt === '47') {
+    }else if(gridNumberPrompt === '47') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(47,47);
-    };
-    if (gridNumberPrompt === '48') {
+    }else if(gridNumberPrompt === '48') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(48,48);
-    };
-    if (gridNumberPrompt === '49') {
+    }else if(gridNumberPrompt === '49') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(49,49);
-    };
-    if (gridNumberPrompt === '50') {
+    }else if(gridNumberPrompt === '50') {
       rowNum --;
       colNum --;
       container.innerHTML = '';
       makeRows(50,50);
+    }
+    if (gridNumberPrompt === '') {
+      alert('Just Type in a number FROM 1 TO 50');
     };
 
 
