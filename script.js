@@ -346,6 +346,20 @@ clearButton.addEventListener('click', function () {
 });
 });
 
+eraserButton.addEventListener('click', function () {
+  gridItem.forEach(item => {
+    item.addEventListener('click', function () {
+        item.style.backgroundColor = 'white';
+})
+});
+
+gridItem.forEach(item => {
+    item.addEventListener('dragover', function () {
+        item.style.backgroundColor = 'white';
+})
+}); 
+
+});
 
 });
 
