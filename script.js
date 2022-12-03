@@ -1,5 +1,5 @@
 let body = document.body;
-
+body.style.cssText = 'background-color: lightblue;'
 
 
 let colorInputTitle = document.createElement('h3');
@@ -71,6 +71,7 @@ gridItem.forEach(item => {
 });
  
 const container = document.getElementById("container");
+container.style.cssText = 'border: 100px solid rgb(224, 44, 44); border-radius: 100px; width: auto;'
 const parentContainer = container.parentNode
 
 function makeRows(rows, cols) {
