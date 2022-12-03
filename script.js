@@ -61,18 +61,202 @@ clearButton.style.cssText = 'box-shadow: 6px 4px 2px; width: 150px; height: 50px
 clearButton.innerHTML = 'CLEAR';
 
 const container = document.getElementById("container");
+const parentContainer = container.parentNode
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
   for (c = 0; c < (rows * cols); c++) {
-    let cell = document.createElement("div");
+    cell = document.createElement("div");
+    cell.style.cssText = 'border: 1px solid black;';
     // cell.innerText = (c + 1);
     container.appendChild(cell).className = "grid-item";
+    
   };
 };
+let rowNum = 1
+let colNum = 1
+makeRows(rowNum,colNum)
 
-makeRows(16,16);
+
+
+
+let promptPopupButton = document.getElementById('promptPopupButton');
+let promptPopupButtonEvent = promptPopupButton.addEventListener('click', function () {
+    let gridNumberPrompt = prompt('Enter The Number Of Boxes You Need to Sketch Your Path');
+    if (gridNumberPrompt === '1') {
+      rowNum--;
+      colNum--;
+      let generatedBoxes = container.innerHTML = '';
+      makeRows(1,1)
+      gridItem.forEach(item => {
+        item.addEventListener('click', function () {
+            item.style.backgroundColor = colorInput.value;
+    })
+    });
+    
+    gridItem.forEach(item => {
+        item.addEventListener('dragover', function () {
+            item.style.backgroundColor = colorInput.value;
+    })
+    }); 
+    
+     
+
+    }
+    if (gridNumberPrompt === '2') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(2,2);  
+      
+
+    };
+    if (gridNumberPrompt === '3') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(3,3);
+      
+
+    };
+    if (gridNumberPrompt === '4') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(4,4);
+      
+
+    };
+    if (gridNumberPrompt === '5') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(5,5);
+      
+
+    };
+    if (gridNumberPrompt === '6') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(6,6);
+      
+
+    };
+    if (gridNumberPrompt === '7') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(7,7);
+      
+
+    };
+    if (gridNumberPrompt === '8') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(8,8);
+      
+
+    };
+    if (gridNumberPrompt === '9') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(9,9);
+    };
+    if (gridNumberPrompt === '10') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(10,10)
+      
+
+    };
+    if (gridNumberPrompt === '11') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(11,11)
+      
+    };
+    if (gridNumberPrompt === '12') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(12,12);
+      
+
+    };
+    if (gridNumberPrompt === '13') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(13,13);
+      
+
+    };
+    if (gridNumberPrompt === '14') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(14,14);
+      
+
+    };
+    if (gridNumberPrompt === '15') {
+      
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(15,15);
+      
+
+    };
+    if (gridNumberPrompt === '16') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(16,16);
+      
+
+    };
+    if (gridNumberPrompt === '17') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(17,17);
+      
+
+    };
+    if (gridNumberPrompt === '18') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(18,18);
+      
+
+    };
+    if (gridNumberPrompt === '19') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(19,19);
+      
+
+    };
+    if (gridNumberPrompt === '20') {
+      rowNum --;
+      colNum --;
+      container.innerHTML = '';
+      makeRows(20,20)
+      
+
+    };
+
+    
+});
 
 let gridItem = document.querySelectorAll('.grid-item');
 console.log(gridItem);
@@ -82,8 +266,11 @@ gridItem.forEach(item => {
 })
 });
 
-let promptPopupButton = document.getElementById('promptPopupButton');
-promptPopupButton.addEventListener('click', function () {
-    console.log(prompt('Enter The Number Of Boxes You Need to Sketch Your Path'));
-
+gridItem.forEach(item => {
+    item.addEventListener('dragover', function () {
+        item.style.backgroundColor = colorInput.value;
 })
+}); 
+
+ 
+
