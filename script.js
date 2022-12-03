@@ -361,6 +361,21 @@ gridItem.forEach(item => {
 
 });
 
+eraserButton.addEventListener('dblclick', function () {
+  gridItem.forEach(item => {
+    item.addEventListener('click', function () {
+        item.style.backgroundColor = colorInput.value;
+})
+});
+
+gridItem.forEach(item => {
+    item.addEventListener('dragover', function () {
+        item.style.backgroundColor = colorInput.value;
+})
+}); 
+
+})
+
 });
 
 let gridItem = document.querySelectorAll('.grid-item');
