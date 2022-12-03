@@ -1,17 +1,6 @@
 let body = document.body;
 
-/*let gridBoxTitle = document.createElement('h3');
-body.append(gridBoxTitle);
-gridBoxTitle.innerHTML = 'SKETCH YOUR PATH TO DOOM!';
-gridBoxTitle.style.cssText = 'color: red; font-size: 48px; text-align: center;';
 
-let gridBoxContainer = document.createElement('div');
-body.append(gridBoxContainer);
-gridBoxContainer.style.cssText = 'display: grid; margin: 0  auto; border: 1px solid black; width: 500px; height: 500px;';
-
-/*let gridBoxItem = document.createElement('div');
-gridBoxContainer.appendChild(gridBoxItem);
-gridBoxItem.style.border = ' 1px solid black';*/
 
 let colorInputTitle = document.createElement('h3');
 body.append(colorInputTitle);
@@ -22,7 +11,6 @@ let colorButtonDiv = document.createElement('div');
 body.append(colorButtonDiv);
 
 let colorInput = document.createElement('input');
-// colorButtonDiv.setAttribute('align', 'center');
 colorButtonDiv.style.cssText = 'display: flex; justify-content: center;';
 colorButtonDiv.appendChild(colorInput);
 colorInput.setAttribute('type', 'color');
