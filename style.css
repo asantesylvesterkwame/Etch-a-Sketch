@@ -2,8 +2,9 @@
     font-family: lacquer, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
+
 .mainheader{
-    color: red;
+    color: rgb(224, 44, 44);
     display: flex;
     justify-content: center;
     font-size: 48px;
@@ -32,7 +33,7 @@
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     width: 50%;
     height: 50%;
-    margin-left: 25%;
+    margin-left: 15%;
   }
   
   .grid-item {
